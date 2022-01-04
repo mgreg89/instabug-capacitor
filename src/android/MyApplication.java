@@ -2,8 +2,8 @@ package com.instabug.cordova.plugin;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.multidex.MultiDex;
-import android.support.multidex.MultiDexApplication;
+import androidx.multidex.MultiDex;
+import androidx.multidex.MultiDexApplication;
 
 import com.instabug.bug.BugReporting;
 import com.instabug.library.Instabug;

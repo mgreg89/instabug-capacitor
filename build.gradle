@@ -14,10 +14,6 @@ android {
             manifest.srcFile 'src/main/AndroidManifest.xml'
         }
     }
-
-    defaultConfig {
-        applicationId = doExtractStringFromManifest("package")
-    }
 }
 
 dependencies {

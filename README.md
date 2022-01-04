@@ -1,3 +1,19 @@
+## CHANGES in this Repo
+- Changes for compatibility with Capacitor:
+    - changed import of 
+        ```
+      import android.support.multidex.MultiDex;
+      import android.support.multidex.MultiDexApplication;
+      ```
+      to
+      ```
+      import androidx.multidex.MultiDex;
+      import androidx.multidex.MultiDexApplication;
+      ```
+      in MyApplication.java
+    - removed applicationId from build.gradle
+
+
 # Instabug Cordova Plugin
 
 The purpose of this plugin is to simplify the process of integrating the Instabug SDK in a hybrid application, as well as to provide an interface to interact with the SDK through JavaScript.
