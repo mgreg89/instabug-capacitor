@@ -12,7 +12,6 @@ import com.instabug.library.Instabug;
 import com.instabug.library.InstabugColorTheme;
 import com.instabug.library.invocation.InstabugInvocationEvent;
 import com.instabug.library.invocation.util.InstabugFloatingButtonEdge;
-import com.instabug.library.extendedbugreport.ExtendedBugReport;
 
 public class MyApplication extends BridgeActivity
 {
@@ -31,7 +30,6 @@ public class MyApplication extends BridgeActivity
         Instabug.setPrimaryColor(Color.parseColor("#1D82DC"));
         Instabug.setSessionProfilerState(Feature.State.ENABLED);
         Instabug.setColorTheme(InstabugColorTheme.InstabugColorThemeDark);
-        BugReporting.setExtendedBugReportState(ExtendedBugReport.State.ENABLED_WITH_OPTIONAL_FIELDS);
         super.onCreate(savedInstanceState);
     }
 

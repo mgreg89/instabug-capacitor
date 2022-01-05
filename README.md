@@ -16,7 +16,6 @@
         ```
         Instabug.setSessionProfilerState(Feature.State.ENABLED);
         Instabug.setColorTheme(InstabugColorTheme.InstabugColorThemeDark);
-        BugReporting.setExtendedBugReportState(ExtendedBugReport.State.ENABLED_WITH_OPTIONAL_FIELDS);
         ```
 
 - IMPORTANT: Add `implementation project(path: ':capacitor-android')` to build.gradle of capacitor-cordova-android-plugins
