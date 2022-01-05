@@ -27,9 +27,18 @@ public class MyApplication extends BridgeActivity
         ).build();
         BugReporting.setFloatingButtonEdge(InstabugFloatingButtonEdge.LEFT);
         BugReporting.setFloatingButtonOffset(250);
-        Instabug.setPrimaryColor(Color.parseColor("#1D82DC"));
         Instabug.setSessionProfilerState(Feature.State.ENABLED);
         Instabug.setColorTheme(InstabugColorTheme.InstabugColorThemeDark);
+
+         // setting primary color after 2 seconds as this gets overwritten by default value otherwise
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                Instabug.setPrimaryColor(Color.parseColor("#1D82DC"));
+            }
+        }, 2*1000);
+
         super.onCreate(savedInstanceState);
     }
 
