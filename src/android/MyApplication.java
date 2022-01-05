@@ -13,6 +13,9 @@ import com.instabug.library.InstabugColorTheme;
 import com.instabug.library.invocation.InstabugInvocationEvent;
 import com.instabug.library.invocation.util.InstabugFloatingButtonEdge;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class MyApplication extends BridgeActivity
 {
     public static final String TAG = "MyApplication";
