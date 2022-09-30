@@ -1,24 +1,14 @@
 ## CHANGES in this Repo
 - Changes for compatibility with Capacitor:
-    - changed import of 
+    - changed imports of form
         ```
-      import android.support.multidex.MultiDex;
-      import android.support.multidex.MultiDexApplication;
+      #import <Instabug/XYZ.h>
       ```
       to
       ```
-      import androidx.multidex.MultiDex;
-      import androidx.multidex.MultiDexApplication;
+      #import "XYZ.h"
       ```
-      in MyApplication.java
-    - removed applicationId from build.gradle
-    - added
-        ```
-        Instabug.setSessionProfilerState(Feature.State.ENABLED);
-        Instabug.setColorTheme(InstabugColorTheme.InstabugColorThemeDark);
-        ```
-
-- IMPORTANT: Add `implementation project(path: ':capacitor-android')` to build.gradle of capacitor-cordova-android-plugins
+      in src/ios/IBGPlugin.m and src/ios/util/ArgsRegistry.h. This is due to capacitor v4 uses "use_frameworks!" in Podfile.
 
 
 # Instabug Cordova Plugin
