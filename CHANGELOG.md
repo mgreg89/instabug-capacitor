@@ -1,3 +1,9 @@
+## 11.2.0 (2022-09-25)
+
+* Bumps Instabug Android SDK to v11.4.1
+* Bumps Instabug iOS SDK to v11.2.0
+* Adds TypeScript support
+
 ## v11.0.1 (2022-08-24)
 
 * Fixes ArgsRegistry import on iOS

@@ -1,13 +1,14 @@
 {
   "name": "instabug-cordova",
   "description": "Cordova plugin for integrating the Instabug SDK.",
-  "version": "11.0.1",
+  "version": "11.2.0",
   "author": "Instabug (https://instabug.com)",
   "repository": "github:Instabug/Instabug-Cordova",
   "homepage": "https://www.instabug.com/platforms/cordova",
   "bugs": "https://github.com/Instabug/Instabug-Cordova/issues",
   "license": "Apache 2.0 License",
   "main": "www/index.js",
+  "types": "www/index.d.ts",
   "keywords": [
     "ecosystem:cordova",
     "cordova",
@@ -18,5 +19,13 @@
     "errors",
     "exceptions",
     "logging"
-  ]
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "yarn build"
+  },
+  "devDependencies": {
+    "@types/cordova": "^0.0.34",
+    "typescript": "^4.8.2"
+  }
 }
