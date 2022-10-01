@@ -9,7 +9,7 @@
       #import "XYZ.h"
       ```
       in src/ios/IBGPlugin.m and src/ios/util/ArgsRegistry.h. This is due to capacitor v4 uses "use_frameworks!" in Podfile.
-
+- Make sure you have the latest cocoapods version installed. If not, get it with `gem install cocoapods`, then `pod deintegrate` and `pod install`.
 
 # Instabug Cordova Plugin
 
